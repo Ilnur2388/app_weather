@@ -1,0 +1,6 @@
+<div>
+<p><%= Date.today.strftime("%A, %B %d") %></p>
+<%= @data["weather"].first["main"] %>
+<img src="https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png">
+<p><%= @data["main"]["temp"] %> <span class="italic">°C</span></p>
+</div>
